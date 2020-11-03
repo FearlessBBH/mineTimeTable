@@ -1,0 +1,19 @@
+<!--pages/person/notice/notices.wxml-->
+<view class="container">
+  <view class="column card" wx:for="{{msg}}" wx:key="index">
+    <image src="/images/bg/bg_card_green.png" mode="widthFix"></image>
+    <view class="title">
+      <van-tag mark type="success">{{item.tag}}</van-tag>
+      <text>{{item.title}}</text>
+    </view>
+    <text class="content">{{item.content}}</text>
+    <view class="bottom">
+      <text>{{item.time}}</text>
+      <view 
+        class="btn {{item.checked?'on':''}}"
+        bindtap="bindChecked"
+        data-idx="{{index}}"
+      >{{item.status}}<van-toast id="van-toast" /></view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,30 @@
+{
+  "pages":[
+    
+    
+    "pages/index/index",
+    "pages/interact/interact",
+    "pages/course/course",
+    "pages/course/detail/details",
+    "pages/course/all/all",
+    "pages/course/add/add",
+    "pages/course/edit/edit",
+    "pages/person/person",
+    "pages/person/parents/parents",
+    "pages/person/parents/check/check",
+    "pages/person/child/child",
+    "pages/person/child/add/add",
+    "pages/person/notice/notices",
+    "pages/person/information/information"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3FC7A0",
+    "navigationBarTitleText": "课表小程序",
+    "navigationBarTextStyle":"white"
+  },
+ 
+  
+  "sitemapLocation": "sitemap.json"
+}

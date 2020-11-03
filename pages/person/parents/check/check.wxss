@@ -1,0 +1,97 @@
+/* pages/person/parents/check/check.wxss */
+.headimg {
+  margin-top: 60rpx;
+  width: 160rpx;
+  height: 160rpx;
+  border: 1px solid #222;
+  border-radius: 50%;
+}
+
+.name {
+  margin-top: 30rpx;
+  height: 40rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.name text {
+  margin: 0 20rpx 0 70rpx;
+}
+
+.tel {
+  margin-top: 10rpx;
+  height: 30rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.need {
+  margin-top: 50rpx;
+  height: 30rpx;
+  color: #3FC7A0;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin-top: 80rpx;
+  height: 40rpx;
+  font-size: 26rpx;
+  align-items: center;
+}
+
+.choose {
+  margin-top: 30rpx;
+  height: 60rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.choose .item {
+  width: 200rpx;
+  height: 100%;
+  border: 1px solid #222;
+  border-radius: 30rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose .on {
+  background-color: #D7B402;
+}
+
+.msg {
+  padding: 0 40rpx;
+  width: 611rpx;
+  height: 140rpx;
+  border: 1px solid #222;
+  border-radius: 30rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.btns {
+  margin-top: 120rpx;
+  height: 80rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btns .item {
+  width: 290rpx;
+  height: 80rpx;
+  border: 1px solid #222;
+  border-radius: 40rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.btns .no {
+  background-color: #D7B402;
+  color: #222;
+}
+
+.btns .yes {
+  background-color: #3FC7A0;
+  color: #fff;
+}

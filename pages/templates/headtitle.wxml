@@ -1,0 +1,10 @@
+<template name='headtitle'>
+  <view class="head">
+    <image src='/images/bg_head.png' mode='widthFix'></image>
+    <view class="item">
+      <image></image>
+      <text>微信名称</text>
+      <view class="title">爸爸</view>
+    </view>
+  </view>
+</template>

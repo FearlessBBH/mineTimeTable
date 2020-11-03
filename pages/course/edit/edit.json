@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText":"编辑课程表",
+  "usingComponents": {
+    "van-cell": "@vant/weapp/cell/index",
+    "van-calendar": "@vant/weapp/calendar/index"
+  }
+}

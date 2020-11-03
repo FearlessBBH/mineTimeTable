@@ -1,0 +1,24 @@
+<!--pages/person/parents/check/check.wxml-->
+<view class="container">
+  <image class="headimg"></image>
+  <view class="column name">
+    <text>张姓名</text>
+    <van-tag round size="medium" type="warning">小姨</van-tag>
+  </view>
+  <text class="column tel">158754557885</text>
+  <text class="column need">申请加入家长群</text>
+  <text class="column title">权限设置</text>
+  <view class="column choose">
+    <block  wx:for="{{control}}" wx:key="index">
+      <view class="item {{item.check?'on':''}}" data-idx="{{index}}" bindtap="bindChoose">{{item.name}}</view>
+    </block>
+  </view>
+  <view class="column arrow">
+    <van-icon name="arrow-up" custom-style='margin-left:{{control[curIdx].left}}rpx' />
+  </view>
+  <view class="column msg">{{control[curIdx].detail}}</view>
+  <view class="column btns">
+    <view class="item no">不通过</view>
+    <view class="item yes">通过</view>
+  </view>
+</view>

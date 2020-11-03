@@ -1,0 +1,23 @@
+<!--pages/person/child/add/add.wxml-->
+<view class="container">
+  <view class="column uploadImg">
+    <image></image>
+    <van-icon name="photograph" color="#ccc" custom-class="icon" size="55rpx" />
+  </view>
+  <view class="column inputList">
+    <van-field value="{{ name }}" label="姓名：" placeholder="请输入学生姓名" />
+    <van-field value="{{ birthday }}" label="生日：" placeholder="请输入学生生日" />
+  </view>
+  <text class="column title">您与学生的关系</text>
+  <view class="column choose">
+    <view 
+    class="item" 
+    wx:for="{{relationship}}" 
+    wx:key='index' 
+    data-idx="{{index}}" 
+    bindtap="bindChose"
+    style="color:{{item.txtColor}};background-color:{{item.bgColor}}"
+    >{{item.name}}</view>
+  </view>
+  <view class="column btn">保存</view>
+</view>

@@ -1,0 +1,98 @@
+/* pages/course/edit/edit.wxss */
+view{
+  display: block;
+}
+.timed {
+  display: flex;
+  height: 90rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timed text {
+  font-size: 24rpx;
+  color: #222;
+}
+
+.timed .picker {
+  display: flex;
+  width: 140rpx;
+  height: 50rpx;
+  font-size: 24rpx;
+  color: #aaa;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #222;
+  border-radius: 4px;
+}
+
+.tab {
+  display: flex;
+  height: 60rpx;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+}
+
+.tab text {
+  margin: 0 50rpx 0 10rpx;
+  font-size: 26rpx;
+  color: #222;
+}
+
+.tab .on {
+  color: #2FAEDA;
+}
+
+.list {
+  display: flex;
+  margin-top: 20rpx;
+  height: auto;
+  flex-wrap: wrap;
+
+}
+
+.list view {
+  display: flex;
+  margin: 10rpx 9rpx;
+  width: 150rpx;
+  height: 50rpx;
+  font-size: 24rpx;
+  color: #222;
+  border-radius: 25rpx;
+  border: 1px solid #222;
+  justify-content: center;
+  align-items: center;
+}
+
+.list .on {
+  background-color: #FFB905;
+}
+
+/* calender */
+.calArea {
+  height: 780rpx;
+}
+
+.calender {
+  width: 100%;
+  --calendar-height: 500px;
+}
+
+.btn_Big {
+  display: flex;
+  margin: 60rpx 0;
+  height: 80rpx;
+  justify-content: center;
+}
+.btn_Big view {
+  display: flex;
+  width: 560rpx;
+  height: 100%;
+  font-size: 30rpx;
+  color: #222;
+  background-color: #D4C101;
+  /* border: 1px solid #222; */
+  border-radius: 40rpx;
+  justify-content: center;
+  align-items: center;
+}

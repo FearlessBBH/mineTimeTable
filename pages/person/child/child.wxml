@@ -1,0 +1,20 @@
+<!--pages/person/child/child.wxml-->
+<view class="container">
+  <view class="column list" wx:for="{{child}}" wx:key='index'>
+    <van-cell-group custom-class='visitorCard' border="{{false}}">
+        <image></image>
+        <van-cell 
+          custom-class="van-cell"
+          title="{{item.name}}"
+          title-class='van-cell_title'
+          border="{{false}}"
+          center
+          is-link 
+          />
+      </van-cell-group>
+  </view>
+  <view class="column btn" bindtap="bindViewChildAdd">
+    <van-icon name="plus" color="#fff" custom-style="margin-right:20rpx" />
+    添加
+  </view>
+</view>

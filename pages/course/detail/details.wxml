@@ -1,0 +1,166 @@
+<!--pages/course/detail/details.wxml-->
+<view class="container">
+  <view class="column times">
+    <text class="week">星期一</text>
+    <text class="date">2020-06-22</text>
+    <view class="btn" bindtap="bindViewCourseAll">全部课程</view>
+  </view>
+  <view class="column card collapse" bindtap="bindFlex">
+    <view class="top" style="height:{{spreaded?'450rpx':'195rpx'}}">
+      <view class="left">
+        <view>07:30-09:30</view>
+        <view>三年级奥数课程</view>
+        <view>
+          <image src="/images/icon/icon_clover.png"></image>
+          学习类
+        </view>
+        <view>机构：上海乐课力教育中心</view>
+        <view>地址：上海浦东新区南泉北路488号</view>
+        <view>老师：牛老师</view>
+        <view>手机：15879878568</view>
+      </view>
+      <view class="right">
+        <view class="state yellow">待上课</view>
+        <view class="bottom">
+          <image></image>
+        </view>
+      </view>
+    </view>
+    <view class="bottom">
+      {{spreaded?'收起详情':'展开详情'}}
+      <van-icon name="{{spreaded?'arrow-up':'arrow-down'}}" custom-style="marign-left:20rpx" />
+    </view>
+  </view>
+  <view class="column status">
+    <van-cell-group custom-class='group'>
+      <van-cell title="状态：" value="正常" value-class='val' is-link bind:click="onOpenStatus" />
+      <van-cell title="提醒：" value="有" value-class='val' is-link bind:click="onOpenRemind" border="{{ false }}" />
+    </van-cell-group>
+  </view>
+  <view class="column ltitle">
+    <text>课程沟通</text>
+    <view class="issue" bindtap="onOpenIssue">+ 发表信息</view>
+  </view>
+  <view class="column linkup">
+    <image></image>
+    <view class="right">
+      <view class="item title">
+        <text>赵清远</text>
+        <text>爷爷</text>
+        <text>06-06-11:00</text>
+      </view>
+      <text class="item content">今天上课老师课程布置的做的作业今天上课老师课程布置的做的作业</text>
+      <view class="item imglist">
+        <image></image>
+        <image></image>
+        <image></image>
+        <image></image>
+        <image></image>
+      </view>
+      <view class="item btns">
+        <view>
+          <image src="/images/icon/icon_praise.png" mode="heightFix"></image>
+          <text>10</text>
+        </view>
+        <view>
+          <image src="/images/icon/icon_reply.png" mode="heightFix"></image>
+          <text>2</text>
+        </view>
+      </view>
+      <view class="item comment">
+        <image></image>
+        <view class="right">
+          <view class="grid title">
+            <text>周姓名</text>
+            <text>奶奶</text>
+          </view>
+          <view class="grid content">作业记录的很详细，希望可以多拍点上课情况的照片</view>
+        </view>
+      </view>
+      <view class="item comment">
+        <image></image>
+        <view class="right">
+          <view class="grid title">
+            <text>赵余华</text>
+            <text>爸爸</text>
+          </view>
+          <view class="grid content">作业记录的很详细，希望可以多拍点上课情况的照片</view>
+        </view>
+      </view>
+      <view class="item comment">
+        <image></image>
+        <view class="right">
+          <view class="grid title">
+            <text>赵余华</text>
+            <text>爸爸</text>
+          </view>
+          <view class="grid content">作业记录的很详细，希望可以多拍点上课情况的照片</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<van-popup show="{{ show }}" bind:close="onClose" custom-style="border-radius: 16rpx;">
+  <view class="popup status_p" hidden="{{!statusPopup}}">
+    <view class="item top">
+      <text>设置课程状态</text>
+      <van-icon name="cross" bindtap="onClose" />
+    </view>
+    <view class="item center">
+      <text>课程状态</text>
+      <picker bindchange="bindPickerChange" value="{{col_Index}}" range="{{columns}}">
+        <view class="picker">
+          {{columns[col_Index]}}
+          <van-icon name="arrow-down" />
+        </view>
+      </picker>
+    </view>
+    <view class="item btn">
+      <view class="cancel" bindtap="onClose">取消</view>
+      <view class="enter" bindtap="onClose">确认</view>
+    </view>
+  </view>
+  <view class="popup remind_p" hidden="{{!remindPopup}}">
+    <view class="item top">
+      <text>设置提醒时间</text>
+      <van-icon name="cross" bindtap="onClose" />
+    </view>
+    <view class="item center">
+      <view class="txt">
+        <text>提醒时间：</text>
+        提醒 <input type="number" /> 分钟
+      </view>
+      <view class="txt">
+        <text>被提醒人：</text>
+        请选择被提醒人
+      </view>
+      <view class="choose">
+        <view class="item" wx:for="{{relationship}}" wx:key='index' data-idx="{{index}}" bindtap="bindChose"
+          style="color:{{item.onoff?'#fff':'#000'}};background-color:{{item.onoff?'#ff8200':'none'}}">{{item.name}}
+        </view>
+      </view>
+    </view>
+    <view class="item btn">
+      <view class="cancel" bindtap="onClose">取消</view>
+      <view class="enter" bindtap="onClose">确认</view>
+    </view>
+  </view>
+  <view class="popup issue_p" hidden="{{!issuePopup}}">
+    <view class="item top">
+      <text>发表信息</text>
+      <van-icon name="cross" bindtap="onClose" />
+    </view>
+    <view class="item center">
+      <textarea name="" cols="30" rows="5" placeholder="说点什么"></textarea>
+      <view class="imgUpload">
+        <van-uploader file-list="{{ fileList }}"
+        max-count="9"
+        bind:after-read="afterRead" />
+      </view>
+    </view>
+    <view class="item btn">
+      <view class="cancel" bindtap="onClose">取消</view>
+      <view class="enter" bindtap="onClose">确认</view>
+    </view>
+  </view>
+</van-popup>

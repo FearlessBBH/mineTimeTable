@@ -1,0 +1,11 @@
+<template name='bottomNav'>
+  <view class="bottomNav" >
+    <image class="bg_nav" src="/images/bg_bottomNav.png" mode='widthFix'></image>
+    <image class="btn_add" src="/images/btn/btn_tabbar.png" mode='widthFix' bindtap="bindViewCourseAdd"></image>
+    <view class='item' wx:key='index' wx:for="{{navImg}}" data-idx="{{index}}" bindtap="bindViewTo">
+      <image wx:if="{{item.onoff}}" src="{{item.activeImgsrc}}" mode="aspectFit"></image>
+      <image wx:else src="{{item.imgsrc}}" mode="aspectFit"></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+</template>

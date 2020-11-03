@@ -1,0 +1,102 @@
+<!--index.wxml-->
+<view class="head {{timed=='day'?'day':'month'}}">
+  <image src="/images/bg/bg_head_index_{{timed=='day'?'day':'month'}}.png" mode='widthFix'></image>
+  <view class="center">
+    <image src='/images/btn/btn_day{{timed=="day"?"_active":""}}.png' bindtap="changeDay"></image>
+    <image src='/images/btn/btn_month{{timed=="month"?"_active":""}}.png' bindtap="changeMonth"></image>
+  </view>
+  <!-- 日历的日期切换 -->
+  <view class="bottom flex" hidden="{{timed=='month'}}">
+    <view class="item">
+      <scroll-view scroll-x="true" enable-flex='true' class="flex scroll">
+        <text wx:for="{{dayList}}" data-idx="{{index}}" bindtap="changeDate" wx:key='index'
+          class="{{currentTab==index?'active':''}}">{{item}}</text>
+      </scroll-view>
+    </view>
+    <!-- <image src="/images/icon/icon_circle.png" mode="widthFix" style='left:{{dayCircle}}rpx'></image> -->
+  </view>
+  <view class="bottom" hidden="{{timed=='day'}}">
+    <calendar />
+  </view>
+</view>
+<view class="container" style="margin-top:{{timed=='day'?'287rpx':'697rpx'}}">
+  <view class="column tips">
+    <image src="/images/icon/icon_book.png"></image>
+    <text>聪明出于勤奋, 天才在于积累。</text>
+  </view>
+  <view class="column card bggrey" bindtap="bindViewCourseDetail">
+    <image src="/images/bg/bg_card_grey.png" mode="widthFix"></image>
+    <view class="left">
+      <text>07:30-09:30</text>
+      <text>三年级奥数课程</text>
+      <view>
+        <image src="/images/icon/icon_clover.png"></image>
+        学习类
+      </view>
+    </view>
+    <view class="right">
+      <view class="state grey">已完成</view>
+      <view class="bottom had">
+        <image></image>
+        <view class="center">
+          <text>接送</text>
+          <image src="/images/icon/icon_arrows.png"></image>
+        </view>
+        <image></image>
+      </view>
+    </view>
+  </view>
+  <view class="column card bggreen">
+    <image src="/images/bg/bg_card_green.png" mode="widthFix"></image>
+    <view class="left">
+      <text>07:30-09:30</text>
+      <text>三年级奥数课程</text>
+      <view>
+        <image src="/images/icon/icon_clover.png"></image>
+        学习类
+      </view>
+    </view>
+    <view class="right">
+      <view class="state yellow">距离上课：05：20</view>
+      <view class="bottom">
+        <image src='/images/btn/btn_addperson.png'></image>
+        <view class="center">
+          <text>接送</text>
+          <image src="/images/icon/icon_arrows.png"></image>
+        </view>
+        <image></image>
+      </view>
+    </view>
+  </view>
+  <view class="column card bgyellow">
+    <image src="/images/bg/bg_card_yellow.png" mode="widthFix"></image>
+    <view class="left">
+      <text>07:30-09:30</text>
+      <text>三年级奥数课程</text>
+      <view>
+        <image src="/images/icon/icon_clover.png"></image>
+        艺术类
+      </view>
+    </view>
+    <view class="right">
+      <view class="state red">请假</view>
+      <view class="bottom">
+        <image src='/images/btn/btn_addperson.png'></image>
+        <view class="center">
+          <text>接送</text>
+          <image src="/images/icon/icon_arrows.png"></image>
+        </view>
+        <image></image>
+      </view>
+    </view>
+  </view>
+  <view class="column invite">
+    <image src="/images/icon/icon_invite.png"></image>
+    <text>邀请亲友</text>
+    <text>让他和您一起见证孩子的成长</text>
+    <image src="/images/btn/btn_close.png"></image>
+  </view>
+</view>
+
+<import src="/pages/templates/bottomnav.wxml" />
+<template is='bottomNav' data='{{navImg}}'></template>

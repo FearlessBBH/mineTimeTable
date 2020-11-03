@@ -1,0 +1,95 @@
+<!--pages/interact/interact.wxml-->
+<view class="container">
+  <import src="/pages/templates/headtitle.wxml" />
+  <template is='headtitle'></template>
+  <view class="column">
+    <image></image>
+    <view class="right">
+      <view class="item title">
+        <text>赵清远</text>
+        <text>爷爷</text>
+        <text>06-06-11:00</text>
+      </view>
+      <text class="item content">今天上课老师课程布置的做的作业今天上课老师课程布置的做的作业</text>
+      <view class="item imglist">
+        <image></image>
+        <image></image>
+        <image></image>
+        <image></image>
+        <image></image>
+      </view>
+      <text class="item tips">乐课力奥数课程</text>
+      <view class="item btns">
+        <view>
+          <image src="/images/icon/icon_praise.png" mode="heightFix"></image>
+          <text>10</text>
+        </view>
+        <view>
+          <image src="/images/icon/icon_reply.png" mode="heightFix"></image>
+          <text>2</text>
+        </view>
+      </view>
+      <view class="item comment">
+        <image></image>
+        <view class="right">
+          <view class="grid title">
+            <text>周姓名</text>
+            <text>奶奶</text>
+          </view>
+          <view class="grid content">作业记录的很详细，希望可以多拍点上课情况的照片</view>
+        </view>
+      </view>
+      <view class="item comment">
+        <image></image>
+        <view class="right">
+          <view class="grid title">
+            <text>赵余华</text>
+            <text>爸爸</text>
+          </view>
+          <view class="grid content">作业记录的很详细，希望可以多拍点上课情况的照片</view>
+        </view>
+      </view>
+      <view class="item comment">
+        <image></image>
+        <view class="right">
+          <view class="grid title">
+            <text>赵余华</text>
+            <text>爸爸</text>
+          </view>
+          <view class="grid content">作业记录的很详细，希望可以多拍点上课情况的照片</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="column">
+    <image></image>
+    <view class="right">
+      <view class="item title">
+        <text>赵清远</text>
+        <text>爷爷</text>
+        <text>06-06-11:00</text>
+      </view>
+      <text class="item content">今天上课老师课程布置的做的作业今天上课老师课程布置的做的作业</text>
+      <view class="item imglist">
+        <image></image>
+        <image></image>
+        <image></image>
+        <image></image>
+        <image></image>
+      </view>
+      <text class="item tips">乐课力奥数课程</text>
+      <view class="item btns">
+        <view>
+          <image src="/images/icon/icon_praise.png" mode="heightFix"></image>
+          <text>10</text>
+        </view>
+        <view>
+          <image src="/images/icon/icon_reply.png" mode="heightFix"></image>
+          <text>2</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<import src="/pages/templates/bottomnav.wxml" />
+<template is='bottomNav' data='{{navImg}}'></template>

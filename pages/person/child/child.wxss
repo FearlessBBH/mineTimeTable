@@ -1,0 +1,37 @@
+/* pages/person/child/child.wxss */
+.van-cell{
+  padding:0 !important;
+  width: 600rpx !important;
+  height: 100% !important;
+}
+.van-cell_title {
+  flex-direction: column !important;
+}
+
+
+/* 页面样式 */
+.column{
+  width: 750rpx;
+  /* padding-left: 35rpx; */
+}
+.list{
+  margin-top: 20rpx;
+}
+.list image{
+  margin: 0 12rpx;
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+}
+.btn{
+  margin-top: 90rpx;
+  width: 600rpx;
+  height: 70rpx;
+  background-color: #02A7F0;
+  border-radius: 35rpx;
+  font-size: 32rpx;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}

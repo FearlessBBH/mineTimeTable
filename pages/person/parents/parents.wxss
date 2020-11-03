@@ -1,0 +1,45 @@
+/* pages/person/parents/parents.wxss */
+.van-cell {
+  padding: 0 !important;
+  width: 600rpx !important;
+  height: 100% !important;
+}
+
+.van-cell_title {
+  flex-direction: column !important;
+}
+.van-cell_value{
+  color: #3FC7A0 !important ;
+  justify-content: flex-end;
+}
+
+
+/* 页面样式 */
+.column {
+  width: 750rpx;
+  /* padding-left: 35rpx; */
+}
+
+.list {
+  margin-top: 20rpx;
+}
+
+.list image {
+  margin: 0 12rpx;
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+}
+
+.del {
+  margin-left: 20rpx;
+  width: 100rpx;
+  height: 110rpx;
+  color: #f00;
+  border: 1px solid #FFC251;
+  border-radius: 19rpx;
+  justify-content: center;
+  align-items: center;
+
+}

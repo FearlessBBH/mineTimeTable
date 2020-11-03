@@ -1,0 +1,21 @@
+<!--pages/person/person.wxml-->
+<view class="container">
+  <import src="/pages/templates/headtitle.wxml" />
+  <template is='headtitle'></template>
+  <view class="column list">
+    <view class="item" data-idx="{{index}}" wx:for="{{listData}}" wx:key='index' bindtap="bindViewToPage">
+      <image src="{{item.imgUrl}}" mode="widthFix"></image>
+      <text>{{item.title}}</text>
+      <image src="/images/btn/btn_right_grey.png" mode="widthFix"></image>
+    </view>
+  </view>
+  <view class="column list" data-idx="{{index}}" wx:for="{{bigListData}}" wx:key='index' bindtap="bindViewToPage2">
+    <view class="item">
+      <image src="{{item.imgUrl}}" mode="widthFix"></image>
+      <text>{{item.title}}</text>
+      <image src="/images/btn/btn_right_grey.png" mode="widthFix"></image>
+    </view>
+  </view>
+</view>
+<import src="/pages/templates/bottomnav.wxml" />
+<template is='bottomNav' data='{{navImg}}'></template>

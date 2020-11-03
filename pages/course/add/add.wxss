@@ -1,0 +1,169 @@
+/* pages/course/add/add.wxss */
+/* 单次/周期选择 */
+.change {
+  margin-top: 20rpx;
+  height: 60rpx;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.change view,
+.btn_Big view {
+  width: 230rpx;
+  height: 100%;
+  font-size: 24rpx;
+  color: #222;
+  background-color: #FFB905;
+  /* border: 1px solid #222; */
+  border-radius: 30rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.change .on {
+  background-color: #1480FF;
+  color: #fff;
+}
+
+/* 单元格列表 */
+.cell {
+  margin-top: 20rpx;
+  height: auto;
+  flex-direction: column;
+}
+
+.cell .item {
+  height: 90rpx;
+  border-bottom: 1px solid #ccc;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cell .item:last-child {
+  border: none;
+}
+
+.cell .item text {
+  font-size: 24rpx;
+  color: #222;
+}
+
+.cell .item .picker {
+  width: 200rpx;
+  height: 50rpx;
+  font-size: 24rpx;
+  color: #222;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cell .item input {
+  width: 500rpx;
+  height: 50rpx;
+  text-align: right;
+  font-size: 24rpx;
+  color: #aaa;
+}
+
+.cell .item .picker_date {
+  color: #aaa;
+  justify-content: flex-end;
+}
+
+.cell .item .picker_time {
+  width: 140rpx;
+  color: #aaa;
+  justify-content: center;
+  border: 1px solid #222;
+  border-radius: 4px;
+}
+
+.cell .item .btn {
+  width: 180rpx;
+  height: 50rpx;
+  font-size: 24rpx;
+  color: #222;
+  background-color: #D4C101;
+  border-radius: 25rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell .title {
+  height: 60rpx;
+  font-size: 24rpx;
+  color: #2FAEDA;
+  align-items: flex-end;
+}
+
+.cell .timearea {
+  height: auto;
+  border: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cell .timearea view {
+  margin-top:20rpx ;
+  width: 100%;
+  height: 50rpx;
+  font-size: 24rpx;
+  color: #222;
+  border: 1px solid #222;
+  border-radius: 25rpx;
+  justify-content: center;
+  align-items: center;
+}
+.cell .list{
+  height: auto;
+  flex-direction: column;
+}
+.cell .list .top{
+  padding-top: 40rpx;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+  overflow-y: hidden;
+  transition: height .5s;
+}
+.cell .list .top .grid{
+  position: relative;
+  margin: 0 29rpx 40rpx;
+  width: 170rpx;
+  height: 110rpx;
+  flex-direction: column;
+  border: 1px solid #222;
+  justify-content: center;
+  align-items: center;
+}
+.cell .list .top .grid text{
+  font-size:22rpx ;
+  text-align: center;
+}
+.cell .list .top .grid .tag{
+  position: absolute;
+  top: -15rpx;
+  left: -15rpx;
+  text-align: center;
+}
+.cell .list .more{
+  width: 100%;
+  height: 40rpx;
+  font-size: 24rpx;
+  color: #222;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_Big {
+  margin: 60rpx 0;
+  height: 80rpx;
+  justify-content: center;
+}
+
+.btn_Big view {
+  width: 560rpx;
+  background-color: #D4C101;
+  border-radius: 40rpx;
+}

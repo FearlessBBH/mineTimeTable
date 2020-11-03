@@ -1,0 +1,65 @@
+<!--pages/course/all/all.wxml-->
+<view class="container">
+  <view class="column choose">
+    <picker bindchange="bindPickerChange" value="{{col_Index}}" range="{{columns}}">
+       <view class="picker">
+        {{columns[col_Index]}}
+       </view>
+    </picker>
+  </view>
+  <view class="column times">
+    <text class="week">星期一</text>
+    <text class="date">2020-06-22</text>
+  </view>
+  <view class="column card bggrey" bindtap="bindViewCourseDetail">
+    <image src="/images/bg/bg_card_grey.png" mode="widthFix"></image>
+    <view class="left">
+      <text>07:30-09:30</text>
+      <text>三年级奥数课程</text>
+      <view>
+        <image src="/images/icon/icon_clover.png"></image>
+        学习类
+      </view>
+    </view>
+    <view class="right">
+      <view class="state grey">已完成</view>
+      <view class="bottom">
+        <image></image>
+      </view>
+    </view>
+  </view>
+  <view class="column card bggreen">
+    <image src="/images/bg/bg_card_green.png" mode="widthFix"></image>
+    <view class="left">
+      <text>07:30-09:30</text>
+      <text>三年级奥数课程</text>
+      <view>
+        <image src="/images/icon/icon_clover.png"></image>
+        学习类
+      </view>
+    </view>
+    <view class="right">
+      <view class="state yellow">待上课</view>
+      <view class="bottom">
+        <image></image>
+      </view>
+    </view>
+  </view>
+  <view class="column card bgyellow">
+    <image src="/images/bg/bg_card_yellow.png" mode="widthFix"></image>
+    <view class="left">
+      <text>07:30-09:30</text>
+      <text>三年级奥数课程</text>
+      <view>
+        <image src="/images/icon/icon_clover.png"></image>
+        学习类
+      </view>
+    </view>
+    <view class="right">
+      <view class="state red">请假</view>
+      <view class="bottom">
+        <image></image>
+      </view>
+    </view>
+  </view>
+</view>

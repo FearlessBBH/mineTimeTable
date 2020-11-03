@@ -1,0 +1,36 @@
+/* pages/course/course.wxss */
+/* 搜索框 */
+.search{
+  margin-top: 20rpx;
+  height: 42rpx;
+  justify-content: space-around;
+}
+.search > .left{
+  width: 80.5%;
+  height: 40rpx;
+  border: 1px solid #FFC251;
+  border-radius: 20rpx;
+  background-color: #FFD353;
+  justify-content: space-around;
+  align-items: center;
+}
+.search > .left > icon{
+  margin-left: 10rpx;
+}
+.search > .left > input{
+  width: 90%;
+  font-size: 24rpx;
+}
+.search > .left > input::placeholder{
+  font-size: 24rpx;
+}
+.search > .right{
+  width: 15%;
+  height: 40rpx;
+  border: 1px solid #FFC251;
+  border-radius: 20rpx;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  background-color: #FFD353;
+}

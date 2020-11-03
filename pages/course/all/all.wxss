@@ -1,0 +1,40 @@
+/* pages/course/all/all.wxss */
+.choose {
+  margin-top: 20rpx;
+  height: 75rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose .picker {
+  padding: 0 40rpx;
+  height: 80rpx;
+  color: #1989fa;
+  font-size: 26rpx;
+  line-height: 80rpx;
+  align-content: center;
+  border-radius: 4px;
+  border: 1px solid #1989fa;
+}
+
+.times {
+  margin-top: 30rpx;
+  height: 40rpx;
+  align-items: baseline;
+}
+
+.times .week {
+  padding: 0 30rpx;
+  margin-right: 20rpx;
+  height: 100%;
+  line-height: 40rpx;
+  font-size: 26rpx;
+  color: #fff;
+  background-color: #ff8200;
+  text-align: center;
+  border-radius: 20rpx;
+}
+
+.times .date {
+  font-size: 24rpx;
+}

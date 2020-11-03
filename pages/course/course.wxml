@@ -1,0 +1,80 @@
+<!--pages/course/course.wxml-->
+<view class="container">
+  <view class="column search">
+    <view class="left">
+      <icon class="icon-small" type="search" size="14"></icon>
+      <input type="text" placeholder="请输入搜索关键字" />
+    </view>
+    <view class="right">搜索</view>
+  </view>
+  <view class="column card bggrey" bindtap="bindViewCourseDetail">
+    <image src="/images/bg/bg_card_grey.png" mode="widthFix"></image>
+    <view class="left">
+      <text>07:30-09:30</text>
+      <text>三年级奥数课程</text>
+      <view>
+        <image src="/images/icon/icon_clover.png"></image>
+        学习类
+      </view>
+    </view>
+    <view class="right">
+      <view class="state grey">已完成</view>
+      <view class="bottom had">
+        <image></image>
+        <view class="center">
+          <text>接送</text>
+          <image src="/images/icon/icon_arrows.png"></image>
+        </view>
+        <image></image>
+      </view>
+    </view>
+
+  </view>
+  <view class="column card bggreen"  bindtap="bindViewCourseDetail">
+    <image src="/images/bg/bg_card_green.png" mode="widthFix"></image>
+    <view class="left">
+      <text>07:30-09:30</text>
+      <text>三年级奥数课程</text>
+      <view>
+        <image src="/images/icon/icon_clover.png"></image>
+        学习类
+      </view>
+    </view>
+    <view class="right">
+      <view class="state yellow">距离上课：05：20</view>
+      <view class="bottom">
+        <image src='/images/btn/btn_addperson.png'></image>
+        <view class="center">
+          <text>接送</text>
+          <image src="/images/icon/icon_arrows.png"></image>
+        </view>
+        <image></image>
+      </view>
+    </view>
+
+  </view>
+  <view class="column card bgyellow"  bindtap="bindViewCourseDetail">
+    <image src="/images/bg/bg_card_yellow.png" mode="widthFix"></image>
+    <view class="left">
+      <text>07:30-09:30</text>
+      <text>三年级奥数课程</text>
+      <view>
+        <image src="/images/icon/icon_clover.png"></image>
+        艺术类
+      </view>
+    </view>
+    <view class="right">
+      <view class="state red">请假</view>
+      <view class="bottom">
+        <image src='/images/btn/btn_addperson.png'></image>
+        <view class="center">
+          <text>接送</text>
+          <image src="/images/icon/icon_arrows.png"></image>
+        </view>
+        <image></image>
+      </view>
+    </view>
+  </view>
+</view>
+<import src="/pages/templates/bottomnav.wxml" />
+<template is='bottomNav' data='{{navImg}}'></template>

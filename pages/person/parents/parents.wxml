@@ -1,0 +1,23 @@
+<!--pages/person/parents/parents.wxml-->
+<view class="container">
+  <view class="column list" wx:for="{{person}}" wx:key='index'>
+    <van-swipe-cell  right-width="{{ 70 }}">
+      <van-cell-group custom-class='visitorCard' border="{{false}}" >
+        <image></image>
+        <van-cell 
+        bind:click="bindViewParentCheck"
+          custom-class="van-cell"
+          title="{{item.name}}"
+          title-class='van-cell_title'
+          label="{{item.relationship}} {{item.tel}}"
+          value="{{item.checked?'待审核':''}}"
+          value-class='van-cell_value'
+          border="{{false}}"
+          center
+          is-link 
+          />
+      </van-cell-group>
+      <view slot="right" class="del">删除</view>
+    </van-swipe-cell>
+  </view>
+</view>

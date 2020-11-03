@@ -1,0 +1,32 @@
+<!--pages/course/edit/edit.wxml-->
+<view class="container">
+  <view class="column timed">
+    <text>上课时间：</text>
+    <picker mode="time" value="{{startTime}}" start="09:00" bindchange="bindChangeStartTime">
+      <view class="picker picker_time" style="margin-left:200rpx">
+        {{startTime}}
+      </view>
+    </picker>-
+    <picker mode="time" value="{{endTime}}" start="16:00" bindchange="bindChangeEndTime">
+      <view class="picker picker_time">
+        {{endTime}}
+      </view>
+    </picker>
+  </view>
+  <view class="column tab">
+    <text class="{{onoff?'on':''}}" bindtap="bindTabRegular">添加规律日期</text>
+    <text class="{{onoff?'':'on'}}" bindtap="bindTabOption">添加自选日期</text>
+  </view>
+  <view class="column list" hidden="{{!onoff}}">
+    <block wx:key="index" wx:for="{{weekend}}">
+      <view class="{{item.checked?'on':''}}" data-idx="{{index}}" bindtap="bindChecked">{{item.day}}</view>
+    </block>
+  </view>
+  <view class="column calArea" hidden="{{onoff}}">
+    <van-calendar show-title="{{false}}" show-subtitle="{{false}}" type="multiple" bind:confirm="onConfirm" show-confirm="{{false}}"
+      poppable="{{ false }}" color="#3FC7A0" class="calendar"  />
+  </view>
+  <view class="column btn_Big">
+    <view>保存</view>
+  </view>
+</view>
