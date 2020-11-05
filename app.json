@@ -1,12 +1,12 @@
 {
   "pages":[
     
-    
+    "pages/course/all/all",
     "pages/index/index",
     "pages/interact/interact",
     "pages/course/course",
     "pages/course/detail/details",
-    "pages/course/all/all",
+    
     "pages/course/add/add",
     "pages/course/edit/edit",
     "pages/person/person",

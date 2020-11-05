@@ -1,11 +1,15 @@
 <!--pages/course/detail/details.wxml-->
 <view class="container">
   <view class="column times">
-    <text class="week">星期一</text>
+    <text class="week">周一</text>
     <text class="date">2020-06-22</text>
-    <view class="btn" bindtap="bindViewCourseAll">全部课程</view>
+    <view class="btn" bindtap="bindViewCourseAll">
+      <image src="/images/icon/icon_cal.png"></image>
+      全部课程</view>
   </view>
   <view class="column card collapse" bindtap="bindFlex">
+    <icon class="solid"></icon>
+    <icon class="circle"></icon>
     <view class="top" style="height:{{spreaded?'450rpx':'195rpx'}}">
       <view class="left">
         <view>07:30-09:30</view>
@@ -27,8 +31,8 @@
       </view>
     </view>
     <view class="bottom">
-      {{spreaded?'收起详情':'展开详情'}}
-      <van-icon name="{{spreaded?'arrow-up':'arrow-down'}}" custom-style="marign-left:20rpx" />
+      {{spreaded?'收起':'展开'}}
+      <van-icon name="{{spreaded?'arrow-up':'arrow-down'}}" custom-style="marign-left:18rpx; color:#ccc;" />
     </view>
   </view>
   <view class="column status">
@@ -39,7 +43,7 @@
   </view>
   <view class="column ltitle">
     <text>课程沟通</text>
-    <view class="issue" bindtap="onOpenIssue">+ 发表信息</view>
+    <view class="issue" bindtap="onOpenIssue"><image src="/images/icon/icon_add.png"></image> 发表信息</view>
   </view>
   <view class="column linkup">
     <image></image>
@@ -100,18 +104,18 @@
     </view>
   </view>
 </view>
-<van-popup show="{{ show }}" bind:close="onClose" custom-style="border-radius: 16rpx;">
+<van-popup show="{{ show }}" bind:close="onClose" custom-style="border-radius: 24rpx;">
   <view class="popup status_p" hidden="{{!statusPopup}}">
     <view class="item top">
       <text>设置课程状态</text>
-      <van-icon name="cross" bindtap="onClose" />
+      <van-icon name="cross" bindtap="onClose" color='#ccc'  />
     </view>
     <view class="item center">
       <text>课程状态</text>
       <picker bindchange="bindPickerChange" value="{{col_Index}}" range="{{columns}}">
         <view class="picker">
           {{columns[col_Index]}}
-          <van-icon name="arrow-down" />
+          <image src="/images/icon/icon_arrow_down.png"></image>
         </view>
       </picker>
     </view>
@@ -123,7 +127,7 @@
   <view class="popup remind_p" hidden="{{!remindPopup}}">
     <view class="item top">
       <text>设置提醒时间</text>
-      <van-icon name="cross" bindtap="onClose" />
+      <van-icon name="cross" bindtap="onClose" color='#ccc' />
     </view>
     <view class="item center">
       <view class="txt">
@@ -136,7 +140,7 @@
       </view>
       <view class="choose">
         <view class="item" wx:for="{{relationship}}" wx:key='index' data-idx="{{index}}" bindtap="bindChose"
-          style="color:{{item.onoff?'#fff':'#000'}};background-color:{{item.onoff?'#ff8200':'none'}}">{{item.name}}
+          style="color:{{item.onoff?'#fff':'#333'}};background-color:{{item.onoff?'#FFC600':'none'}}">{{item.name}}
         </view>
       </view>
     </view>
@@ -148,7 +152,7 @@
   <view class="popup issue_p" hidden="{{!issuePopup}}">
     <view class="item top">
       <text>发表信息</text>
-      <van-icon name="cross" bindtap="onClose" />
+      <van-icon name="cross" bindtap="onClose" color='#ccc' />
     </view>
     <view class="item center">
       <textarea name="" cols="30" rows="5" placeholder="说点什么"></textarea>
