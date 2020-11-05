@@ -244,10 +244,9 @@ view, .flex{
 .visitorCard{
   display: flex;
   margin-left: 20rpx;
-  height: 110rpx;
-  border: 1px solid #FFC251;
-  border-radius: 19rpx;
-  /* background-color: #e0e0e0; */
+  height: 144rpx;
+  border: 1px solid #E7E7E7;
+  border-radius: 20rpx;
   justify-content: space-around;
   align-items: center;
 }

@@ -1,40 +1,57 @@
 /* pages/course/all/all.wxss */
 .choose {
   margin-top: 20rpx;
-  height: 75rpx;
+  height: 60rpx;
   justify-content: center;
   align-items: center;
 }
 
 .choose .picker {
-  padding: 0 40rpx;
-  height: 80rpx;
-  color: #1989fa;
-  font-size: 26rpx;
-  line-height: 80rpx;
-  align-content: center;
-  border-radius: 4px;
-  border: 1px solid #1989fa;
+  width: 360rpx;
+  height: 60rpx;
+  background: linear-gradient(90deg, #63CB96, #2FC5A5);
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose .picker>image:nth-child(1) {
+  margin-right: 26rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.choose .picker>text {
+  width: 200rpx;
+  font-size: 28rpx;
+  line-height: 60rpx;
+  color: #fff;
+}
+
+.choose .picker>image:nth-child(3) {
+  width: 26rpx;
+  height: 18rpx;
 }
 
 .times {
-  margin-top: 30rpx;
-  height: 40rpx;
+  margin-top: 50rpx;
+  height: 52rpx;
   align-items: baseline;
 }
 
 .times .week {
-  padding: 0 30rpx;
-  margin-right: 20rpx;
+  margin-right: 14rpx;
+  width: 136rpx;
   height: 100%;
-  line-height: 40rpx;
-  font-size: 26rpx;
+  line-height: 52rpx;
+  font-size: 34rpx;
   color: #fff;
-  background-color: #ff8200;
   text-align: center;
-  border-radius: 20rpx;
+  background: linear-gradient(90deg, #63CB96, #2FC5A5);
+  border-radius: 26px;
 }
 
 .times .date {
-  font-size: 24rpx;
+  font-size: 32rpx;
+  color: #222;
 }

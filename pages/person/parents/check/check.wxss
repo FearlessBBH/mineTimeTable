@@ -36,35 +36,43 @@
 .title {
   margin-top: 80rpx;
   height: 40rpx;
-  font-size: 26rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #333;
   align-items: center;
 }
 
 .choose {
   margin-top: 30rpx;
-  height: 60rpx;
+  height: 82rpx;
   justify-content: space-between;
   align-items: center;
 }
 
 .choose .item {
-  width: 200rpx;
+  width: 220rpx;
   height: 100%;
-  border: 1px solid #222;
-  border-radius: 30rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333;
+  border: 1px solid #E7E7E7;
+  border-radius: 41rpx;
   justify-content: center;
   align-items: center;
 }
 
 .choose .on {
-  background-color: #D7B402;
+  background-color: #FFC600;
+  color: #fff;
+  border: 1px solid #FFC600;
 }
 
 .msg {
   padding: 0 40rpx;
   width: 611rpx;
   height: 140rpx;
-  border: 1px solid #222;
+  color: #333;
+  border: 1px solid #FFC151;
   border-radius: 30rpx;
   justify-content: center;
   align-items: center;
@@ -80,18 +88,19 @@
 .btns .item {
   width: 290rpx;
   height: 80rpx;
-  border: 1px solid #222;
+  font-size: 32rpx;
   border-radius: 40rpx;
+  color: #fff;
   justify-content: center;
   align-items: center;
 }
 
 .btns .no {
-  background-color: #D7B402;
-  color: #222;
+  background: linear-gradient(117deg, #FFD954, #FFC151);
+  box-shadow: 0px 3px 6px 0px rgba(255, 193, 81, 0.45);
 }
 
 .btns .yes {
-  background-color: #3FC7A0;
-  color: #fff;
+  background: linear-gradient(117deg, #63CB96, #2FC5A5);
+  box-shadow: 0px 3px 6px 0px rgba(47, 197, 165, 0.45);
 }

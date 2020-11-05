@@ -8,33 +8,27 @@ Page({
     relationship:[
       {
         name:'爸爸',
-        bgColor:'none',
-        txtColor:'#000'
+        checked:true
       },
       {
         name:'妈妈',
-        bgColor:'#ff8200',
-        txtColor:'#fff'
+        checked:false
       },
       {
         name:'爷爷',
-        bgColor:'none',
-        txtColor:'#000'
+        checked:false
       },
       {
         name:'奶奶',
-        bgColor:'none',
-        txtColor:'#000'
+        checked:false
       },
       {
         name:'外公',
-        bgColor:'none',
-        txtColor:'#000'
+        checked:false
       },
       {
         name:'外婆',
-        bgColor:'none',
-        txtColor:'#000'
+        checked:false
       }
     ],
   },
@@ -44,11 +38,9 @@ Page({
     let idx = e.currentTarget.dataset.idx;
     let choses = this.data.relationship;
     choses.forEach(item=>{
-        item.bgColor = 'none';
-        item.txtColor = '#000';
+        item.checked = false;
     });
-    choses[idx].bgColor = '#ff8200';
-    choses[idx].txtColor = '#fff';
+    choses[idx].checked = true;
     this.setData({
       relationship:choses
     })

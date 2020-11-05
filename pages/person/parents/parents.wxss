@@ -7,9 +7,13 @@
 
 .van-cell_title {
   flex-direction: column !important;
+  font-size: 32rpx;
+  color: #333;
+  font-weight: 500;
 }
-.van-cell_value{
-  color: #3FC7A0 !important ;
+
+.van-cell_value {
+  color: #3FC7A0 !important;
   justify-content: flex-end;
 }
 
@@ -33,13 +37,12 @@
 }
 
 .del {
-  margin-left: 20rpx;
-  width: 100rpx;
-  height: 110rpx;
-  color: #f00;
-  border: 1px solid #FFC251;
-  border-radius: 19rpx;
+  width: 120rpx;
+  height: 144rpx;
+  color: #fff;
+  font-size: 28rpx;
+  border-radius: 20rpx;
   justify-content: center;
   align-items: center;
-
+  background-color: #3EC7A0;
 }

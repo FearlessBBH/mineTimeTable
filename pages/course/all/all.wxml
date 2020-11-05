@@ -3,12 +3,14 @@
   <view class="column choose">
     <picker bindchange="bindPickerChange" value="{{col_Index}}" range="{{columns}}">
        <view class="picker">
-        {{columns[col_Index]}}
+         <image src="/images/icon/icon_cal.png"></image>
+         <text>{{columns[col_Index]}}</text>
+        <image src="/images/icon/icon_arrow_down_white.png"></image>
        </view>
     </picker>
   </view>
   <view class="column times">
-    <text class="week">星期一</text>
+    <text class="week">周一</text>
     <text class="date">2020-06-22</text>
   </view>
   <view class="column card bggrey" bindtap="bindViewCourseDetail">

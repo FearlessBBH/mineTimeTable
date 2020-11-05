@@ -1,40 +1,39 @@
 /* pages/course/add/add.wxss */
 /* 单次/周期选择 */
 .change {
-  margin-top: 20rpx;
-  height: 60rpx;
+  width: 100%;
+  height: 99rpx;
+  border-bottom: 1px solid #ddd;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.change view,
-.btn_Big view {
-  width: 230rpx;
+.change view {
+  width: 239rpx;
   height: 100%;
-  font-size: 24rpx;
-  color: #222;
-  background-color: #FFB905;
-  /* border: 1px solid #222; */
-  border-radius: 30rpx;
+  font-size: 30rpx;
+  color: #333;
+  border-bottom: 4rpx solid transparent;
   justify-content: center;
   align-items: center;
 }
 
 .change .on {
-  background-color: #1480FF;
-  color: #fff;
+  border-bottom: 4rpx solid #3FC7A0;
 }
 
 /* 单元格列表 */
 .cell {
-  margin-top: 20rpx;
+  width: 100%;
   height: auto;
   flex-direction: column;
+  align-items: center;
 }
 
 .cell .item {
-  height: 90rpx;
-  border-bottom: 1px solid #ccc;
+  width: 691rpx;
+  height: 119rpx;
+  border-bottom: 1px solid #ddd;
   justify-content: space-between;
   align-items: center;
 }
@@ -44,35 +43,41 @@
 }
 
 .cell .item text {
-  font-size: 24rpx;
-  color: #222;
+  font-size: 30rpx;
+  color: #666;
 }
 
 .cell .item .picker {
   width: 200rpx;
   height: 50rpx;
-  font-size: 24rpx;
-  color: #222;
-  justify-content: space-between;
+  font-size: 30rpx;
+  color: #333;
+  justify-content: flex-end;
   align-items: center;
+}
+
+.cell .item .picker image {
+  margin-left: 20rpx;
+  width: 26rpx;
+  height: 18rpx;
 }
 
 .cell .item input {
   width: 500rpx;
   height: 50rpx;
   text-align: right;
-  font-size: 24rpx;
-  color: #aaa;
+  font-size: 30rpx;
+  color: #333;
 }
 
 .cell .item .picker_date {
-  color: #aaa;
+  color: #333;
   justify-content: flex-end;
 }
 
 .cell .item .picker_time {
   width: 140rpx;
-  color: #aaa;
+  color: #333;
   justify-content: center;
   border: 1px solid #222;
   border-radius: 4px;
@@ -81,19 +86,34 @@
 .cell .item .btn {
   width: 180rpx;
   height: 50rpx;
-  font-size: 24rpx;
-  color: #222;
-  background-color: #D4C101;
-  border-radius: 25rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  color:#32C5A4;
   justify-content: center;
   align-items: center;
 }
+.cell .item .btn image{
+  margin-right: 23rpx;
+  width: 32rpx;
+  height: 34rpx;
+}
 
 .cell .title {
+  margin-top: 49rpx;
+  width: 100%;
   height: 60rpx;
-  font-size: 24rpx;
-  color: #2FAEDA;
-  align-items: flex-end;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.cell .title>text {
+  margin-left: 32rpx;
+  line-height: 60rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #32C5A4;
+  border-bottom: 3px solid #32C5A4;
+  letter-spacing: 2rpx;
 }
 
 .cell .timearea {
@@ -104,21 +124,28 @@
 }
 
 .cell .timearea view {
-  margin-top:20rpx ;
+  margin-top: 20rpx;
   width: 100%;
-  height: 50rpx;
-  font-size: 24rpx;
-  color: #222;
-  border: 1px solid #222;
-  border-radius: 25rpx;
+  height: 82rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333;
+  border: 1px solid #E7E7E7;
+  border-radius: 41rpx;
   justify-content: center;
   align-items: center;
 }
-.cell .list{
+
+.cell .timearea view:nth-child(1) {
+  margin-top: 30rpx;
+}
+
+.cell .list {
   height: auto;
   flex-direction: column;
 }
-.cell .list .top{
+
+.cell .list .top {
   padding-top: 40rpx;
   width: 100%;
   height: auto;
@@ -127,43 +154,65 @@
   overflow-y: hidden;
   transition: height .5s;
 }
-.cell .list .top .grid{
+
+.cell .list .top .grid {
   position: relative;
-  margin: 0 29rpx 40rpx;
-  width: 170rpx;
-  height: 110rpx;
+  margin: 0 24rpx 40rpx;
+  width: 178rpx;
+  height: 115rpx;
   flex-direction: column;
-  border: 1px solid #222;
+  border: 1px solid #E7E7E7;
   justify-content: center;
   align-items: center;
 }
-.cell .list .top .grid text{
-  font-size:22rpx ;
+
+.cell .list .top .grid text {
+  font-size: 20rpx;
+  color: #999;
   text-align: center;
 }
-.cell .list .top .grid .tag{
+
+.cell .list .top .grid text:nth-child(3) {
+  font-size: 24rpx;
+  color: #333;
+}
+
+.cell .list .top .grid .tag {
   position: absolute;
+  padding: 0 !important;
   top: -15rpx;
   left: -15rpx;
-  text-align: center;
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: #32C5A4;
 }
-.cell .list .more{
+
+.cell .list .more {
   width: 100%;
   height: 40rpx;
   font-size: 24rpx;
-  color: #222;
+  color: #32C5A4;
   justify-content: center;
   align-items: center;
 }
 
 .btn_Big {
   margin: 60rpx 0;
-  height: 80rpx;
+  height: 84rpx;
   justify-content: center;
 }
 
 .btn_Big view {
   width: 560rpx;
-  background-color: #D4C101;
-  border-radius: 40rpx;
+  height: 100%;
+  font-size: 36rpx;
+  color: #fff;
+  background: linear-gradient(117deg, #63CB96, #2FC5A5);
+  box-shadow: 0px 3px 10px 0px rgba(47, 197, 165, 0.45);
+  border-radius: 42px;
+  justify-content: center;
+  align-items: center;
 }

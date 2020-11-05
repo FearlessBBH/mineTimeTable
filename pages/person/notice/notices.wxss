@@ -1,46 +1,57 @@
 /* pages/person/notice/notices.wxss */
-.card{
+.card {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-end;
 }
-.card .title{
+
+.card .title {
   margin-top: 10rpx;
   width: 620rpx;
   height: 40rpx;
   align-items: flex-end;
 }
-.card .title text{
+
+.card .title text {
   margin-left: 20rpx;
   font-size: 26rpx;
   font-weight: bold;
 }
-.card .content{
+
+.card .content {
   width: 90%;
   font-size: 24rpx;
   color: #ccc;
 }
-.card .bottom{
+
+.card .bottom {
   width: 90%;
   height: 52rpx;
   justify-content: space-between;
   align-items: baseline;
 }
-.card .bottom text{
+
+.card .bottom text {
   font-size: 24rpx;
   color: #ccc;
 }
-.card .bottom .btn{
+
+.card .bottom .btn {
   margin-right: 20rpx;
   width: 136rpx;
   height: 40rpx;
   font-size: 22rpx;
-  border: 1px solid #ccc;
+  color: #fff;
   border-radius: 29rpx;
-  background-color: #FFC252;
+  background: linear-gradient(117deg, #FFD954, #FFC151);
+  box-shadow: 0px 3px 6px 0px rgba(255, 193, 81, 0.45);
   justify-content: center;
   align-items: center;
 }
-.card .bottom .on{
-  background-color: #F0F0F0;
+
+.card .bottom .on {
+  background: #F0F0F0;
+  box-shadow:none;
+  border: 1px solid #e7e7e7;
+  color: #333;
 }
