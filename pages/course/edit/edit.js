@@ -45,8 +45,8 @@ Page({
 
   // 日期选择
   bindChecked: function (e) {
-    let idx = e.currentTarget.dataset.idx;
-    let items = this.data.weekend;
+    var idx = e.currentTarget.dataset.idx;
+    var items = this.data.weekend;
     items[idx].checked = !items[idx].checked;
     this.setData({ weekend: items })
   },

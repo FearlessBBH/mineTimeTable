@@ -14,7 +14,7 @@
     </block>
   </view>
   <view class="column arrow">
-    <van-icon name="arrow-up" custom-style='margin-left:{{control[curIdx].left}}rpx' />
+    <image src="/images/icon/icon_triangle.png" style='margin-left:{{control[curIdx].left}}rpx'></image>
   </view>
   <view class="column msg">{{control[curIdx].detail}}</view>
   <view class="column btns">

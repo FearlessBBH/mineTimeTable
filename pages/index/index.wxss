@@ -61,20 +61,22 @@ view {
   position: relative;
   margin-top: 33rpx;
   width: 554rpx;
-  height: 92rpx;
+  height: 93rpx;
   border-radius: 46rpx;
   background-color: #ECFAF6;
   align-items: center;
   /* justify-content: center; */
   overflow-x: hidden;
 }
-.day .bottom .item .scroll{
-  width: 97%;
+
+.day .bottom .item .scroll {
+  width: 98%;
   height: 92rpx;
   border-radius: 46rpx;
 }
+
 .day .bottom .item text {
-  margin: 0 14rpx;
+  margin: 1rpx 14rpx 0;
   padding: 15rpx 20rpx;
   width: 46rpx;
   height: 59rpx;
@@ -172,7 +174,7 @@ view {
 .invite {
   display: flex;
   margin-top: 45rpx;
-  margin-bottom: 160rpx;
+  margin-bottom: 180rpx;
   border-color: #FFC762;
   background-color: #FFF7ED;
 }
@@ -196,4 +198,37 @@ view {
   margin-left: 126rpx;
   width: 22rpx;
   height: 22rpx;
+}
+
+/* Popup */
+/* 选择接送人 */
+.choseperson {
+  padding: 30rpx 0;
+  width: 75%;
+  min-height: 220rpx;
+  /* justify-content: space-around; */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.choseperson .grid {
+  margin: 40rpx 0 0 10rpx;
+  width: 100rpx;
+  height: 120rpx;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.choseperson .grid>image {
+  width: 76rpx;
+  height: 76rpx;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+}
+
+.choseperson .grid>text {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #333;
 }

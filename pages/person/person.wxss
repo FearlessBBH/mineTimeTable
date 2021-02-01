@@ -1,5 +1,9 @@
 /* pages/person/person.wxss */
-.column{
+.list:last-child {
+  margin-bottom: 180rpx;
+}
+
+.column {
   margin-top: 40rpx;
   width: 670rpx;
   min-height: 110rpx;
@@ -8,25 +12,30 @@
   flex-direction: column;
   align-items: center;
 }
-.list .item{
+
+.list .item {
   width: 602rpx;
   height: 109rpx;
-  border-top:1px solid #EBEFF9;
+  border-top: 1px solid #EBEFF9;
   justify-content: space-between;
   align-items: center;
 }
-.list .item:first-child{
-  border:none;
+
+.list .item:first-child {
+  border: none;
 }
-.list .item image:first-child{
+
+.list .item image:first-child {
   width: 52rpx;
 }
-.list .item image:last-child{
+
+.list .item image:last-child {
   width: 18rpx;
 }
-.list .item text{
+
+.list .item text {
   width: 420rpx;
-  font-size:30rpx;
+  font-size: 30rpx;
   font-weight: 400;
   color: #4d4d4d;
 }

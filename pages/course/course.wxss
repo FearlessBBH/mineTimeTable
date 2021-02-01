@@ -1,4 +1,8 @@
 /* pages/course/course.wxss */
+.card:last-child {
+  margin-bottom: 20rpx;
+}
+
 /* 搜索框 */
 .search {
   padding: 0 30rpx;

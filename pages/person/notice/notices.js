@@ -1,5 +1,5 @@
 // pages/person/notice/notices.js
-import Toast from '../../../miniprogram_npm/@vant/weapp/toast/toast.js';
+// import Toast from '../../../miniprogram_npm/@vant/weapp/toast/toast.js';
 Page({
 
   /**
@@ -37,12 +37,17 @@ Page({
 
   // 点击确认
   bindChecked:function(e){
-    let idx = e.currentTarget.dataset.idx;
+    var idx = e.currentTarget.dataset.idx;
     if(this.data.msg[idx].checked) return;
     this.data.msg[idx].checked = true;
     this.data.msg[idx].status = '已确认';
     this.setData({ msg:this.data.msg });
-    Toast.success('已确认');
+    wx.showToast({
+      title: '已确认',
+      icon: 'success',
+      duration: 2000
+    })
+    // Toast.success('已确认');
     // Toast.fail('失败文案');
   },
 

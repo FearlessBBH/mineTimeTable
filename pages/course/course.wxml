@@ -1,8 +1,8 @@
 <!--pages/course/course.wxml-->
 <view class="container">
   <view class="column search">
-      <input type="text" placeholder="请输入搜索关键字" placeholder-style="color: #FFC151;" />
-      <image src="/images/icon/icon_search.png"></image>
+    <input type="text" placeholder="请输入搜索关键字" placeholder-style="color: #FFC151;" />
+    <image src="/images/icon/icon_search.png"></image>
   </view>
   <view class="column card bggrey" bindtap="bindViewCourseDetail">
     <image src="/images/bg/bg_card_grey.png" mode="widthFix"></image>
@@ -17,17 +17,23 @@
     <view class="right">
       <view class="state grey">已完成</view>
       <view class="bottom had">
-        <image></image>
+        <view class="grid">
+          <image></image>
+          <text>宝宝</text>
+        </view>
         <view class="center">
           <text>接送</text>
           <image src="/images/icon/icon_arrows.png"></image>
         </view>
-        <image></image>
+        <view class="grid">
+          <image></image>
+          <text>宝宝</text>
+        </view>
       </view>
     </view>
 
   </view>
-  <view class="column card bggreen"  bindtap="bindViewCourseDetail">
+  <view class="column card bggreen" bindtap="bindViewCourseDetail">
     <image src="/images/bg/bg_card_green.png" mode="widthFix"></image>
     <view class="left">
       <text>07:30-09:30</text>
@@ -40,17 +46,22 @@
     <view class="right">
       <view class="state yellow">距离上课：05：20</view>
       <view class="bottom">
-        <image src='/images/btn/btn_addperson.png'></image>
+        <view class="grid">
+          <image src='/images/btn/btn_addperson.png'></image>
+        </view>
         <view class="center">
           <text>接送</text>
           <image src="/images/icon/icon_arrows.png"></image>
         </view>
-        <image></image>
+        <view class="grid">
+          <image></image>
+          <text>宝宝</text>
+        </view>
       </view>
     </view>
 
   </view>
-  <view class="column card bgyellow"  bindtap="bindViewCourseDetail">
+  <view class="column card bgyellow" bindtap="bindViewCourseDetail">
     <image src="/images/bg/bg_card_yellow.png" mode="widthFix"></image>
     <view class="left">
       <text>07:30-09:30</text>
@@ -63,12 +74,17 @@
     <view class="right">
       <view class="state red">请假</view>
       <view class="bottom">
-        <image src='/images/btn/btn_addperson.png'></image>
+        <view class="grid">
+          <image src='/images/btn/btn_addperson.png'></image>
+        </view>
         <view class="center">
           <text>接送</text>
           <image src="/images/icon/icon_arrows.png"></image>
         </view>
-        <image></image>
+        <view class="grid">
+          <image></image>
+          <text>宝宝</text>
+        </view>
       </view>
     </view>
   </view>

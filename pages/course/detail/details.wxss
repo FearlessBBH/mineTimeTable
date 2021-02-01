@@ -81,6 +81,7 @@
   overflow-y: hidden;
 }
 
+.collapse .top>.left,
 .collapse .left {
   display: block;
   width: 395rpx;
@@ -98,20 +99,39 @@
   margin: 24rpx 0;
 }
 
+.collapse .top>.right,
 .collapse .right {
   width: 200rpx;
   height: 195rpx;
 }
+.collapse .top>.right>.bottom{
+  width: 65%;
+  flex-direction: column;
+  align-items: center;
+}
 
-.collapse .bottom {
+.collapse>.bottom {
   margin: 10rpx 0;
   width: 100%;
   font-size: 28rpx;
   font-weight: 500;
   letter-spacing: 1px;
   color: #32C5A4;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.collapse .top>.right>.bottom>image {
+  width: 65rpx;
+  height: 65rpx;
+  border: none;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+.collapse .top>.right>.bottom>text{
+  font-size: 28rpx;
+  color: #9A9A9A;
 }
 
 .status {
@@ -220,7 +240,7 @@
 .remind_p>.center {
   margin: 40rpx 0;
   padding: 0 20rpx;
-  width: 600rpx;
+  width: 550rpx;
   min-height: 400rpx;
   flex-direction: column;
 }
@@ -254,7 +274,7 @@
 
 .choose {
   margin-top: 20rpx;
-  width: 600rpx;
+  width: 550rpx;
   flex-wrap: wrap;
   height: auto;
 }
@@ -300,11 +320,13 @@
   justify-content: center;
   align-items: center;
 }
-.ltitle .issue>image{
+
+.ltitle .issue>image {
   margin-right: 16rpx;
   width: 32rpx;
   height: 32rpx;
 }
+
 .linkup {
   margin-top: 26rpx;
   justify-content: space-between;

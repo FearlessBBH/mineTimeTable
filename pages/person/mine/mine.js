@@ -1,49 +1,11 @@
-// pages/person/child/add/add.js
+// pages/person/mine/mine.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    relationship:[
-      {
-        name:'爸爸',
-        checked:true
-      },
-      {
-        name:'妈妈',
-        checked:false
-      },
-      {
-        name:'爷爷',
-        checked:false
-      },
-      {
-        name:'奶奶',
-        checked:false
-      },
-      {
-        name:'外公',
-        checked:false
-      },
-      {
-        name:'外婆',
-        checked:false
-      }
-    ],
-  },
 
-  // 关系选择
-  bindChose:function(e){
-    var idx = e.currentTarget.dataset.idx;
-    var choses = this.data.relationship;
-    choses.forEach(item=>{
-        item.checked = false;
-    });
-    choses[idx].checked = true;
-    this.setData({
-      relationship:choses
-    })
   },
 
   /**

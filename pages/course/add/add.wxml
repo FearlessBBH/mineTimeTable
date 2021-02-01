@@ -16,7 +16,7 @@
     </view>
     <view class="item">
       <text>课程名称：</text>
-      <input type="text" value="" placeholder="请输入课程名称" placeholder-style="color:#ccc;"/>
+      <input type="text" value="" placeholder="请输入课程名称" placeholder-style="color:#ccc;" />
     </view>
     <view class="item">
       <text>课程日期：</text>
@@ -52,27 +52,27 @@
     </view>
     <view class="item">
       <text>课程名称：</text>
-      <input type="text" value="" placeholder="请输入课程名称" placeholder-style="color:#ccc"/>
+      <input type="text" value="" placeholder="请输入课程名称" placeholder-style="color:#ccc" />
     </view>
     <view class="item">
       <text>机构地址：</text>
-      <input type="text" value="" placeholder="请输入机构地址" placeholder-style="color:#ccc"/>
+      <input type="text" value="" placeholder="请输入机构地址" placeholder-style="color:#ccc" />
     </view>
     <view class="item">
       <text>课程费用：</text>
-      <input type="number" value="" placeholder="请输入课程费用" placeholder-style="color:#ccc"/>
+      <input type="number" value="" placeholder="请输入课程费用" placeholder-style="color:#ccc" />
     </view>
     <view class="item">
       <text>课程老师：</text>
-      <input type="number" value="" placeholder="请输入老师姓名" placeholder-style="color:#ccc"/>
+      <input type="number" value="" placeholder="请输入老师姓名" placeholder-style="color:#ccc" />
     </view>
     <view class="item">
       <text>老师电话：</text>
-      <input type="number" value="" placeholder="请输入电话号码" placeholder-style="color:#ccc"/>
+      <input type="number" value="" placeholder="请输入电话号码" placeholder-style="color:#ccc" />
     </view>
     <view class="item">
       <text>课时次数：</text>
-      <input type="number" value="" placeholder="请输入课时次数" placeholder-style="color:#ccc"/>
+      <input type="number" value="" placeholder="请输入课时次数" placeholder-style="color:#ccc" />
     </view>
     <view class="item">
       <text bindtap="showPopup">开始日期：</text>
@@ -90,29 +90,35 @@
         </view>
       </picker>
     </view>
-    <view class="item">
+    <view class="item" style="border-bottom:none; height:103rpx">
       <text>课程课表：</text>
       <view class="btn" bindtap="bindViewCourseEdit">
         <image src="/images/icon/icon_edit.png"></image>
-        编辑课表</view>
+        编辑课表
+      </view>
     </view>
-    <view class="item title"><text>规律课表</text></view>
-    <view class="item timearea">
-      <view>每周一、每周三、每周五 09：00-10：30</view>
-      <view>每周一、每周三、每周五 09：00-10：30</view>
-      <view>每周一、每周三、每周五 09：00-10：30</view>
-    </view>
-    <view class="item title"><text>自选课表</text></view>
-    <view class="item list">
-      <view class="top" style="height:{{spreaded?'auto':'130rpx'}}">
-        <view class="grid" wx:key="index" wx:for="{{optionalClass}}">
-          <van-tag type="warning" size="medium" custom-class='tag'>
-            {{index+1}}</van-tag>
-          <text>{{item.date}}</text>
-          <text>{{item.time}}</text>
+    <image style="margin-left: 593rpx;width: 36rpx; height: 20rpx;" src="/images/icon/icon_arrow_up_gray.png"></image>
+    <view class="item editarea">
+      <view class="item title" style="margin-top:none"><text>规律课表</text></view>
+      <view class="item timearea">
+        <view>每周一、每周三、每周五 09：00-10：30</view>
+        <view>每周一、每周三、每周五 09：00-10：30</view>
+        <view>每周一、每周三、每周五 09：00-10：30</view>
+      </view>
+      <view class="item title"><text>自选课表</text></view>
+      <view class="item list">
+        <view class="top" style="height:{{spreaded?'auto':'130rpx'}}">
+          <view class="grid" wx:key="index" wx:for="{{optionalClass}}">
+            <van-tag type="warning" size="medium" custom-class='tag'>
+              {{index+1}}</van-tag>
+            <text>{{item.date}}</text>
+            <text>{{item.time}}</text>
+          </view>
+        </view>
+        <view class="more" bindtap="bindFlex">{{spreaded?'收起':'展开'}}
+          <van-icon name="arrow-{{spreaded?'up':'down'}}" custom-style="margin-left:10rpx" />
         </view>
       </view>
-      <view class="more" bindtap="bindFlex">{{spreaded?'收起':'展开'}} <van-icon name="arrow-{{spreaded?'up':'down'}}" custom-style="margin-left:10rpx"/></view>
     </view>
   </view>
   <view class="column btn_Big">

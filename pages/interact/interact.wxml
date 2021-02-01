@@ -3,9 +3,9 @@
   <import src="/pages/templates/headtitle.wxml" />
   <template is='headtitle'></template>
   <view class="column">
-    <image></image>
+    <image bindtap="bindViewPerson"></image>
     <view class="right">
-      <view class="item title">
+      <view class="item title" bindtap="bindViewPerson">
         <text>赵清远</text>
         <text>爷爷</text>
         <text>06-06-11:00</text>

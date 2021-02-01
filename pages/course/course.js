@@ -13,7 +13,7 @@ Page({
   // 导航跳转页面
   bindViewTo: function (e) {
     if (this.data.tabIndex == e.currentTarget.dataset.idx) return;
-    let idx = e.currentTarget.dataset.idx;
+    var idx = e.currentTarget.dataset.idx;
     app.globalData.navImg.forEach(item => item.onoff = false);
     app.globalData.navImg[idx].onoff = true;
     wx.reLaunch({
@@ -36,7 +36,7 @@ Page({
   onLoad: function (options) {
     // console.log(app.)
     if (app.globalData.navImg) {
-      let idx = this.data.tabIndex;
+      var idx = this.data.tabIndex;
       app.globalData.navImg.forEach(item => item.onoff = false);
       app.globalData.navImg[idx].onoff = true;
       this.setData({

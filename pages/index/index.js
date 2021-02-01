@@ -1,6 +1,6 @@
 //index.js
 //获取应用实例
-const app = getApp()
+var app = getApp()
 
 Page({
   data: {
@@ -10,13 +10,14 @@ Page({
     dayList: ['7/09周二', '7/10周三', '7/11周四', '7/12周五', '7/13周六', '7/13周六', '7/13周六', '7/13周六'],
     currentTab: 0,
     navImg: [],
-    tabIndex: 0  // 当前页面
+    tabIndex: 0,  // 当前页面
+    show: false
   },
 
   // 导航跳转页面
   bindViewTo: function (e) {
     if (this.data.tabIndex == e.currentTarget.dataset.idx) return;
-    let idx = e.currentTarget.dataset.idx;
+    var idx = e.currentTarget.dataset.idx;
     app.globalData.navImg.forEach(item => item.onoff = false);
     app.globalData.navImg[idx].onoff = true;
     wx.reLaunch({
@@ -50,9 +51,17 @@ Page({
       currentTab: e.currentTarget.dataset.idx,
     })
   },
+  showPerson() {
+    this.setData({ show: true });
+  },
+
+  onClose() {
+    this.setData({ show: false });
+  },
+
   onLoad: function () {
     if (app.globalData.navImg) {
-      let idx = this.data.tabIndex;
+      var idx = this.data.tabIndex;
       app.globalData.navImg.forEach(item => item.onoff = false);
       app.globalData.navImg[idx].onoff = true;
       this.setData({

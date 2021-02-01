@@ -1,0 +1,69 @@
+/* pages/login/welcome/welcome.wxss */
+.BigTitle {
+  margin: 70rpx 0;
+  width: 691rpx;
+  font-size: 50rpx;
+  font-weight: bold;
+  color: #32C5A4;
+}
+
+.title {
+  margin: 50rpx 0 20rpx;
+  width: 691rpx;
+  font-size: 30rpx;
+  /* font-weight: bold; */
+  color: #333;
+}
+
+.choose {
+  margin-top: 20rpx;
+  flex-wrap: wrap;
+  height: 600rpx;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+.choose .item {
+  margin: 0 20rpx 20rpx 0;
+  width: 213rpx;
+  height: 66rpx;
+  font-size: 28rpx;
+  border-radius: 33rpx;
+  border: 1px solid #E7E7E7;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose .item:nth-child(3n+3) {
+  margin: 0;
+}
+
+.choose .on {
+  background-color: #FFC600;
+  border: 1px solid #FFC600;
+  color: #fff;
+}
+
+.btn_Big {
+  display: flex;
+  margin: 60rpx 0 30rpx;
+  height: 80rpx;
+  justify-content: center;
+}
+
+.btn_Big view {
+  display: flex;
+  width: 560rpx;
+  height: 100%;
+  font-size: 36rpx;
+  color: #fff;
+  background: linear-gradient(117deg, #63CB96, #2FC5A5);
+  box-shadow: 0px 3px 10px 0px rgba(47, 197, 165, 0.45);
+  border-radius: 42px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tips{
+  color: #999;
+}

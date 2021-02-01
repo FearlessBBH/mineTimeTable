@@ -1,4 +1,8 @@
 /* pages/person/notice/notices.wxss */
+.card:last-child {
+  margin-bottom: 20rpx;
+}
+
 .card {
   flex-direction: column;
   justify-content: space-evenly;
@@ -51,7 +55,7 @@
 
 .card .bottom .on {
   background: #F0F0F0;
-  box-shadow:none;
+  box-shadow: none;
   border: 1px solid #e7e7e7;
   color: #333;
 }

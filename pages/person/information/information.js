@@ -35,8 +35,8 @@ Page({
 
   // 关系选择
   bindChose:function(e){
-    let idx = e.currentTarget.dataset.idx;
-    let choses = this.data.relationship;
+    var idx = e.currentTarget.dataset.idx;
+    var choses = this.data.relationship;
     choses.forEach(item=>{
         item.checked = false;
     });

@@ -26,8 +26,8 @@ Page({
   },
   // 权限设置
   bindChoose: function (e) {
-    let idx = e.currentTarget.dataset.idx;
-    let ctl = this.data.control;
+    var idx = e.currentTarget.dataset.idx;
+    var ctl = this.data.control;
     ctl.forEach(item => {
       item.check = false
     })

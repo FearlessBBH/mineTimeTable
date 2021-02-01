@@ -1,49 +1,32 @@
-// pages/person/child/add/add.js
+// pages/login/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    relationship:[
-      {
-        name:'爸爸',
-        checked:true
-      },
-      {
-        name:'妈妈',
-        checked:false
-      },
-      {
-        name:'爷爷',
-        checked:false
-      },
-      {
-        name:'奶奶',
-        checked:false
-      },
-      {
-        name:'外公',
-        checked:false
-      },
-      {
-        name:'外婆',
-        checked:false
-      }
-    ],
+    radio: '1',
+    show: false,
   },
 
-  // 关系选择
-  bindChose:function(e){
-    var idx = e.currentTarget.dataset.idx;
-    var choses = this.data.relationship;
-    choses.forEach(item=>{
-        item.checked = false;
-    });
-    choses[idx].checked = true;
-    this.setData({
-      relationship:choses
+  bindViewWelcome(){
+    wx.navigateTo({
+      url: 'welcome/welcome',
     })
+  },
+
+  showPopup() {
+    this.setData({ show: true });
+  },
+
+  onClose() {
+    this.setData({ show: false });
+  },
+
+  onChange(event) {
+    this.setData({
+      radio: event.detail,
+    });
   },
 
   /**

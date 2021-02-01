@@ -93,7 +93,7 @@ Page({
 
   // 自选课表的展开收缩
   bindFlex: function () {
-    let onoff = this.data.spreaded;
+    var onoff = this.data.spreaded;
     onoff = !onoff;
     this.setData({ spreaded: onoff })
   },

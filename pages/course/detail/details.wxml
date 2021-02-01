@@ -27,6 +27,7 @@
         <view class="state yellow">待上课</view>
         <view class="bottom">
           <image></image>
+          <text>宝宝</text>
         </view>
       </view>
     </view>

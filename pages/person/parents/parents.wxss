@@ -37,7 +37,8 @@
 }
 
 .del {
-  width: 120rpx;
+  margin-left: 10rpx;
+  width: 110rpx;
   height: 144rpx;
   color: #fff;
   font-size: 28rpx;

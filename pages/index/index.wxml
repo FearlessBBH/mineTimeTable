@@ -37,12 +37,18 @@
     <view class="right">
       <view class="state grey">已完成</view>
       <view class="bottom had">
-        <image></image>
+        <view class="grid">
+          <image></image>
+          <text>爷爷</text>
+        </view>
         <view class="center">
           <text>接送</text>
           <image src="/images/icon/icon_arrows.png"></image>
         </view>
-        <image></image>
+        <view class="grid">
+          <image></image>
+          <text>宝宝</text>
+        </view>
       </view>
     </view>
   </view>
@@ -59,12 +65,17 @@
     <view class="right">
       <view class="state yellow">距离上课：05：20</view>
       <view class="bottom">
-        <image src='/images/btn/btn_addperson.png'></image>
+        <view class="grid">
+          <image src='/images/btn/btn_addperson.png' bindtap="showPerson"></image>
+        </view>
         <view class="center">
           <text>接送</text>
           <image src="/images/icon/icon_arrows.png"></image>
         </view>
-        <image></image>
+        <view class="grid">
+          <image></image>
+          <text>宝宝</text>
+        </view>
       </view>
     </view>
   </view>
@@ -81,12 +92,17 @@
     <view class="right">
       <view class="state red">请假</view>
       <view class="bottom">
-        <image src='/images/btn/btn_addperson.png'></image>
+        <view class="grid">
+          <image src='/images/btn/btn_addperson.png'></image>
+        </view>
         <view class="center">
           <text>接送</text>
           <image src="/images/icon/icon_arrows.png"></image>
         </view>
-        <image></image>
+        <view class="grid">
+          <image></image>
+          <text>宝宝</text>
+        </view>
       </view>
     </view>
   </view>
@@ -97,6 +113,40 @@
     <image src="/images/btn/btn_close.png"></image>
   </view>
 </view>
-
+<van-popup show="{{ show }}" closeable round custom-class='choseperson flex' bind:close="onClose">
+  <!-- 选择接送人 -->
+  <view class="grid flex">
+    <image></image>
+    <text>爸爸</text>
+  </view>
+  <view class="grid flex">
+    <image></image>
+    <text>爸爸</text>
+  </view>
+  <view class="grid flex">
+    <image></image>
+    <text>爸爸</text>
+  </view>
+  <view class="grid flex">
+    <image></image>
+    <text>妈妈</text>
+  </view>
+  <view class="grid flex">
+    <image></image>
+    <text>爷爷</text>
+  </view>
+  <view class="grid flex">
+    <image></image>
+    <text>奶奶</text>
+  </view>
+  <view class="grid flex">
+    <image></image>
+    <text>外公</text>
+  </view>
+  <view class="grid flex">
+    <image></image>
+    <text>外婆</text>
+  </view>
+</van-popup>
 <import src="/pages/templates/bottomnav.wxml" />
 <template is='bottomNav' data='{{navImg}}'></template>

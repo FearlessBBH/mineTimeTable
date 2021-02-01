@@ -1,0 +1,24 @@
+<!--pages/person/mine/mine.wxml-->
+<view class="container">
+  <view class="column top">
+    <image></image>
+    <view class="item right">
+      <view class="title">姐姐</view>
+      <text>昵称：随便啥</text>
+    </view>
+  </view>
+  <view class="column center">
+    <text>权限</text>
+    <text>管理</text>
+  </view>
+  <view class="column bottom">
+    <text>互动圈</text>
+    <view class="item imgs">
+      <image></image>
+      <image></image>
+      <image></image>
+      <image></image>
+    </view>
+    <van-icon name="arrow" size="20px"/>
+  </view>
+</view>

@@ -2,11 +2,11 @@
 <view class="container">
   <view class="column choose">
     <picker bindchange="bindPickerChange" value="{{col_Index}}" range="{{columns}}">
-       <view class="picker">
-         <image src="/images/icon/icon_cal.png"></image>
-         <text>{{columns[col_Index]}}</text>
+      <view class="picker">
+        <image src="/images/icon/icon_cal.png"></image>
+        <text>{{columns[col_Index]}}</text>
         <image src="/images/icon/icon_arrow_down_white.png"></image>
-       </view>
+      </view>
     </picker>
   </view>
   <view class="column times">
@@ -26,7 +26,10 @@
     <view class="right">
       <view class="state grey">已完成</view>
       <view class="bottom">
-        <image></image>
+        <view class="grid">
+          <image></image>
+          <text>宝宝</text>
+        </view>
       </view>
     </view>
   </view>
@@ -43,7 +46,10 @@
     <view class="right">
       <view class="state yellow">待上课</view>
       <view class="bottom">
-        <image></image>
+        <view class="grid">
+          <image></image>
+          <text>宝宝</text>
+        </view>
       </view>
     </view>
   </view>
@@ -60,7 +66,10 @@
     <view class="right">
       <view class="state red">请假</view>
       <view class="bottom">
-        <image></image>
+        <view class="grid">
+          <image></image>
+          <text>宝宝</text>
+        </view>
       </view>
     </view>
   </view>

@@ -1,0 +1,41 @@
+<!--pages/login/index.wxml-->
+<view class="container">
+  <view class="column addNew" bindtap="showPopup">
+    <image src="/images/icon/icon_add.png"></image>
+    <text>新建家庭</text>
+  </view>
+  <view class="column title">请选择家庭</view>
+  <view class="column radio">
+    <van-radio-group value="{{ radio }}" bind:change="onChange">
+      <van-radio name="1" checked-color='#32C5A4'>
+        <image src="/images/bg/bg_card_green.png"></image>
+        <text>家庭组 1</text>
+      </van-radio>
+      <van-radio name="2" checked-color='#32C5A4'>
+        <image src="/images/bg/bg_card_green.png"></image>
+        <text>家庭组 2</text>
+      </van-radio>
+      <van-radio name="3" checked-color='#32C5A4'>
+        <image src="/images/bg/bg_card_green.png"></image>
+        <text>家庭组 3</text>
+      </van-radio>
+      <van-radio name="4" checked-color='#32C5A4'>
+        <image src="/images/bg/bg_card_green.png"></image>
+        <text>家庭组 4</text>
+      </van-radio>
+    </van-radio-group>
+  </view>
+  <view class="column btn_Big">
+    <view bindtap="bindViewWelcome">确认进入</view>
+  </view>
+</view>
+<van-popup custom-class='popup' show="{{ show }}" round closeable bind:close="onClose">
+  <view class="item top">新建家庭</view>
+  <view class="item center">
+    <text>家庭名称：</text>
+    <input type="text" value="" placeholder="请输入家庭名称" />
+  </view>
+  <view class="item bottom">
+    <view bindtap="onClose">确认提交</view>
+  </view>
+</van-popup>

@@ -58,7 +58,7 @@ Page({
   },
   // 展开收起
   bindFlex: function () {
-    let spreaded = !this.data.spreaded;
+    var spreaded = !this.data.spreaded;
     // console.log(spreaded)
     this.setData({ spreaded: spreaded })
   },
@@ -111,8 +111,8 @@ Page({
 
   // 关系选择
   bindChose: function (e) {
-    let idx = e.currentTarget.dataset.idx;
-    let choses = this.data.relationship;
+    var idx = e.currentTarget.dataset.idx;
+    var choses = this.data.relationship;
     choses[idx].onoff = !choses[idx].onoff;
     this.setData({
       relationship: choses

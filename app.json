@@ -1,6 +1,6 @@
 {
   "pages":[
-      
+   
     "pages/index/index",
     "pages/interact/interact",
     "pages/course/course",
@@ -14,8 +14,10 @@
     "pages/person/child/child",
     "pages/person/child/add/add",
     "pages/person/notice/notices",
-    "pages/person/information/information"
-
+    "pages/person/information/information",
+    "pages/person/mine/mine",
+    "pages/login/index",
+    "pages/login/welcome/welcome"
   ],
   "window":{
     "backgroundTextStyle":"light",

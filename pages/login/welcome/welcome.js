@@ -1,51 +1,56 @@
-// pages/person/child/add/add.js
+// pages/login/welcome/welcome.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    relationship:[
+    relationship: [
       {
-        name:'爸爸',
-        checked:true
+        name: '爸爸',
+        checked: true
       },
       {
-        name:'妈妈',
-        checked:false
+        name: '妈妈',
+        checked: false
       },
       {
-        name:'爷爷',
-        checked:false
+        name: '爷爷',
+        checked: false
       },
       {
-        name:'奶奶',
-        checked:false
+        name: '奶奶',
+        checked: false
       },
       {
-        name:'外公',
-        checked:false
+        name: '外公',
+        checked: false
       },
       {
-        name:'外婆',
-        checked:false
+        name: '外婆',
+        checked: false
       }
     ],
   },
 
-  // 关系选择
-  bindChose:function(e){
-    var idx = e.currentTarget.dataset.idx;
-    var choses = this.data.relationship;
-    choses.forEach(item=>{
-        item.checked = false;
-    });
-    choses[idx].checked = true;
-    this.setData({
-      relationship:choses
+  bindViewToIndex(){
+    wx.navigateTo({
+      url: '../../index/index',
     })
   },
 
+  // 关系选择
+  bindChose: function (e) {
+    var idx = e.currentTarget.dataset.idx;
+    var choses = this.data.relationship;
+    choses.forEach(item => {
+      item.checked = false;
+    });
+    choses[idx].checked = true;
+    this.setData({
+      relationship: choses
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

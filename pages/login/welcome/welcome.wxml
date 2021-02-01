@@ -1,0 +1,14 @@
+<!--pages/login/welcome/welcome.wxml-->
+<view class="container">
+  <text class="BigTitle">欢迎加入XXX家族</text>
+  <text class="title">请选择您与XXX的关系</text>
+  <view class="column choose">
+    <block wx:for="{{relationship}}" wx:key='index'>
+      <view class="item {{item.checked?'on':''}}"  data-idx="{{index}}" bindtap="bindChose">{{item.name}}</view>
+    </block>
+  </view>
+  <view class="column btn_Big">
+    <view bindtap="bindViewToIndex">确认加入</view>
+  </view>
+  <text class="tips">审核通过后可以查看XX的课程消息啦</text>
+</view>

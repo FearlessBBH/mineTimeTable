@@ -80,7 +80,7 @@ view {
 
 /* calender */
 .calArea {
-  height: 780rpx;
+  height: 830rpx;
 }
 
 .calender {

@@ -67,13 +67,26 @@
   border: 1px solid #FFC600;
 }
 
+.arrow {
+  position: relative;
+  margin-top: 5rpx;
+  height: 18rpx;
+}
+
+.arrow>image {
+  position: absolute;
+  bottom: -1px;
+  width: 32rpx;
+  height: 18rpx;
+}
+
 .msg {
   padding: 0 40rpx;
   width: 611rpx;
   height: 140rpx;
   color: #333;
   border: 1px solid #FFC151;
-  border-radius: 30rpx;
+  border-radius: 16rpx;
   justify-content: center;
   align-items: center;
 }

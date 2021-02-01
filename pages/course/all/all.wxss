@@ -55,3 +55,7 @@
   font-size: 32rpx;
   color: #222;
 }
+
+.card:last-child{
+  margin-bottom: 20rpx;
+}
