@@ -1,0 +1,18 @@
+<!--pages/accredit/accredit.wxml-->
+<view wx:if="{{isHide}}" class='container'>
+  <view wx:if="{{canIUse}}" style="height:55%;width:100%;">
+    <view class='imagesize'>
+      <image src="log.png" class='in-image'>
+      </image>
+    </view>
+    <view class='content'>
+      <view>哇课表申请获取以下权限:</view>
+      <text>获得您的公开信息(昵称，头像等)</text>
+    </view>
+    <button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo"
+    style="width:80%;background-color: #3FC7A0;">
+      授权登录
+    </button>
+  </view>
+  <view wx:else>请升级微信版本</view>
+</view>

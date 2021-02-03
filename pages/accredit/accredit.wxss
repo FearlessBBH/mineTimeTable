@@ -1,0 +1,38 @@
+/* pages/accredit/accredit.wxss */
+
+page {
+    height: 100%;
+}
+
+view {
+    display: block;
+}
+
+.imagesize {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagesize image {
+    width: 80%;
+    height: 80%;
+}
+
+.content {
+    margin-left: 50rpx;
+    margin-bottom: 90rpx;
+}
+
+.content text {
+    display: block;
+    color: #9d9d9d;
+    margin-top: 30rpx;
+    font-size: 28rpx;
+}
+
+.bottom {
+    border-radius: 80rpx;
+    font-size: 35rpx;
+}
